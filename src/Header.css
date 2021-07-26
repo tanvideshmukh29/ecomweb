@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbarr{
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    background-color: black;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.leftside .mainheading{
+    color: white;
+    text-decoration: none;
+}
+.rightside .link{
+    display: flex;
+    
+    text-decoration: none ;
+}
+
+.rightside .header__optionLineOne{
+    text-decoration: none;
+    margin-right: 13px;
+    padding-bottom: 4px;
+}
+
+.rightside >button{
+    display: none;
+}
+
+.header__option{
+    display: flex;
+    flex-direction: column;
+    margin-right: 33px;
+    
+    text-decoration: none;
+    color: white;
+}
+.basket{
+    padding: 3px;
+    font-size: 12px;
+    font-size: 18px;
+}
+ .navbarr .rightside #hidden{
+     display: flex;
+ }
+.header__optionBasket{
+    display: flex;
+    text-decoration: none;
+    
+    
+    
+
+    color: white;
+    font-size: 13px;
+    justify-content: space-evenly;
+}
+
+.button{
+    border-radius: 4px;
+    padding: 3px;
+}
+@media screen and (max-width: 700px){
+    .rightside >button{
+    display:block;
+    }
+    .rightside .link{
+        display: none;
+    }
+    .navbarr .rightside #hidden{
+        position: absolute;
+        left: 0px;
+        top: 70px;
+        height: 100px;
+        width: 100%;
+
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     
+     }
+}
